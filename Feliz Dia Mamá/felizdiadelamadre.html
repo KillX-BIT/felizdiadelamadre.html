@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Mi Mamá ❤️</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1, #fff);
+      color:#333;
+      overflow-x:hidden;
+    }
+
+   header{
+  height:100vh;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("./PORTADA.png");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero{
+      color:white;
+      max-width:900px;
+      animation: aparecer 2s ease;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      text-shadow:2px 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .hero p{
+      font-size:1.4rem;
+      line-height:1.7;
+    }
+
+    @keyframes aparecer{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      background:rgba(255,255,255,0.95);
+      backdrop-filter:blur(10px);
+      padding:15px;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+      list-style:none;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#c94f7c;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ff2d75;
+    }
+
+    section{
+      padding:90px 10%;
+    }
+
+    .titulo{
+      text-align:center;
+      font-size:2.7rem;
+      color:#c94f7c;
+      margin-bottom:60px;
+    }
+
+    .bloque{
+      display:flex;
+      align-items:center;
+      gap:50px;
+      margin-bottom:90px;
+      flex-wrap:wrap;
+    }
+
+    .bloque:nth-child(even){
+      flex-direction:row-reverse;
+    }
+
+    .imagen{
+      flex:1;
+      min-width:300px;
+    }
+
+    .imagen img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      transition:0.5s;
+    }
+
+    .imagen img:hover{
+      transform:scale(1.03);
+    }
+
+    .texto{
+      flex:1;
+      min-width:300px;
+    }
+
+    .texto h2{
+      color:#d14f7d;
+      font-size:2rem;
+      margin-bottom:20px;
+    }
+
+    .texto p{
+      line-height:1.9;
+      font-size:1.1rem;
+    }
+
+    .frase{
+      background:linear-gradient(135deg,#ff8fb1,#ffcad4);
+      padding:80px 20px;
+      text-align:center;
+      color:white;
+    }
+
+    .frase h2{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    .frase p{
+      font-size:1.4rem;
+      max-width:900px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    footer{
+      background:#c94f7c;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    footer h2{
+      margin-bottom:15px;
+      font-size:2rem;
+    }
+
+    footer p{
+      font-size:1.1rem;
+      line-height:1.8;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .hero p{
+        font-size:1.1rem;
+      }
+
+      .bloque{
+        flex-direction:column !important;
+      }
+
+      .titulo{
+        font-size:2.2rem;
+      }
+
+      .texto h2{
+        font-size:1.7rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Para Mi Mamá ❤️</h1>
+      <p>
+        Esta página es para la mujer más importante de mi vida,
+        la persona que me enseñó lo que es el amor verdadero,
+        el esfuerzo y la familia.
+        <br><br>
+        Feliz Día de la Madre, Andrea Valesca Castro Maturana.
+      </p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#antes">Antes de Nacer</a></li>
+      <li><a href="#nacimiento">Mi Nacimiento</a></li>
+      <li><a href="#familia">Nuestra Familia</a></li>
+      <li><a href="#mudanza">Mudanza</a></li>
+      <li><a href="#hogar">Nuestro Hogar</a></li>
+      <li><a href="#hoy">Hoy</a></li>
+    </ul>
+  </nav>
+
+  <!-- ANTES -->
+  <section id="antes">
+    <h1 class="titulo">Antes de Mi Nacimiento</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="andreajoven.jpg" alt="Andrea Joven">
+      </div>
+
+      <div class="texto">
+        <h2>La historia de una mamá increíble</h2>
+        <p>
+          Mi mamá, Andrea Valesca Castro Maturana,
+          nació el 10 de noviembre de 1994.
+          Desde muy joven fue una persona fuerte,
+          cariñosa y capaz de dar todo por quienes amaba.
+          <br><br>
+          El 20 de octubre de 2011 comenzó una relación
+          con Jordi Hernán Nova Norambuena.
+          Eran dos adolescentes profundamente enamorados,
+          soñando juntos con formar una familia
+          y salir adelante sin importar las dificultades.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NACIMIENTO -->
+  <section id="nacimiento">
+    <h1 class="titulo">Mi Nacimiento</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="nacimiento.jpg" alt="Nacimiento">
+      </div>
+
+      <div class="texto">
+        <h2>18 de diciembre de 2012</h2>
+        <p>
+          Ese día nació Martin Ignacio Nova Castro,
+          o sea, yo.
+          <br><br>
+          Mis papás eran adolescentes,
+          y aunque todo fue difícil,
+          nunca dejaron de luchar por mí.
+          Mi mamá incluso dejó sus estudios
+          para dedicarse completamente a cuidarme.
+          <br><br>
+          A pesar de tener poco,
+          siempre hicieron todo lo posible para darme lo mejor:
+          comida, ropa, leche, cuidados y muchísimo amor.
+          Nunca me faltó cariño.
+        </p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="familia.jpg" alt="Familia pequeña">
+      </div>
+
+      <div class="texto">
+        <h2>Una madre desde muy joven</h2>
+        <p>
+          Mi mamá aprendió a ser fuerte demasiado rápido.
+          Mientras otras personas vivían su adolescencia,
+          ella dedicaba sus días y noches a criarme.
+          <br><br>
+          Dormía poco, se preocupaba por todo
+          y aun así siempre encontraba la forma
+          de abrazarme, cuidarme y hacerme sentir amado.
+          <br><br>
+          Ahí comenzó la historia
+          de la mejor mamá del mundo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMILIA -->
+  <section id="familia">
+    <h1 class="titulo">Nuestra Familia</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="lucas.jpg" alt="Primo">
+      </div>
+
+      <div class="texto">
+        <h2>Un hijo más para ella</h2>
+        <p>
+          Seis meses después de mi nacimiento,
+          mi tía Nataly
+         tuvo a su hijo, mi primo Lucas.
+          <br><br>
+          Mis papás lo cuidaron como si fuera parte de nosotros.
+          Le enseñaron a caminar,
+          compartimos toda nuestra infancia juntos
+          y se convirtió en un hermano para mí.
+          <br><br>
+          Mi mamá nunca hizo diferencias.
+          Siempre entregó amor a todos.
+        </p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="trinidad.jpg" alt="Hermana Trinidad">
+      </div>
+
+      <div class="texto">
+        <h2>La llegada de Trinidad</h2>
+        <p>
+          El 27 de abril de 2017 nació
+          Trinidad,
+          mi hermana pequeña.
+          <br><br>
+          Desde ese momento,
+          mi mamá tuvo que dividir su tiempo,
+          su energía y su amor entre dos hijos,
+          pero aun así siempre logró estar presente.
+          <br><br>
+          Nos enseñó valores,
+          respeto y unión familiar.
+          Gracias a ella,
+          nuestra familia siempre se mantuvo fuerte.
+        </p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="pintana.jpg" alt="Casa en La Pintana">
+      </div>
+
+      <div class="texto">
+        <h2>La vida en La Pintana</h2>
+        <p>
+          Durante muchos años vivimos
+          en La Pintana,
+          junto a mis abuelos,
+          mi tía y mi primo.
+          <br><br>
+          Aunque no éramos ricos,
+          crecimos rodeados de cariño,
+          apoyo y unión.
+          <br><br>
+          Mi mamá siempre hacía lo posible
+          para mantenernos felices,
+          incluso cuando las cosas eran difíciles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUDANZA -->
+  <section id="mudanza">
+    <h1 class="titulo">La Mudanza Que Cambió Todo</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="mudanza.jpg" alt="Mudanza a San Nicolás">
+      </div>
+
+      <div class="texto">
+        <h2>El año 2022</h2>
+        <p>
+          En 2022 nos mudamos
+          a San Nicolás.
+          <br><br>
+          Fue una decisión difícil,
+          porque dejamos atrás muchas personas
+          y recuerdos importantes.
+          Mi tía y mi primo se quedaron
+          en La Pintana,
+          y la separación nos dolió muchísimo.
+          <br><br>
+          Pero mis papás pensaron en nuestro futuro.
+          Querían que viviéramos en un lugar más seguro
+          y con mejores oportunidades.
+        </p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="colegio.jpg" alt="Colegio">
+      </div>
+
+      <div class="texto">
+        <h2>Todo por nuestro futuro</h2>
+        <p>
+          Gracias al esfuerzo de mis papás,
+          mi hermana y yo pudimos entrar
+          al Liceo Bicentenario De Excelencia
+          Polivalente San Nicolás.
+          <br><br>
+          Mi mamá siempre puso nuestra educación primero.
+          Nunca dejó de esforzarse
+          para que pudiéramos tener oportunidades
+          que quizás ella no tuvo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOGAR -->
+  <section id="hogar">
+    <h1 class="titulo">Nuestro Propio Hogar</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="casanueva.jpg" alt="Casa nueva">
+      </div>
+
+      <div class="texto">
+        <h2>El sueño de la casa propia</h2>
+        <p>
+          Entre enero y febrero de 2024,
+          nos mudamos a nuestra propia casa.
+          <br><br>
+          Esa casa fue construida
+          con años de sacrificio,
+          esfuerzo y amor.
+          Mis papás vendieron su camioneta,
+          su auto y su moto
+          para poder cumplir este sueño.
+          <br><br>
+          Mi mamá nunca se rindió.
+          Siempre siguió adelante pensando en nosotros.
+        </p>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="familiaunida.jpg" alt="Familia unida">
+      </div>
+
+      <div class="texto">
+        <h2>La familia siempre siguió unida</h2>
+        <p>
+          Aunque vivimos lejos de mi primo,
+          jamás dejamos de vernos.
+          En vacaciones y feriados
+          seguíamos compartiendo juntos.
+          <br><br>
+          Porque mi mamá nos enseñó
+          que la familia no depende de la distancia,
+          sino del amor que existe entre las personas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOY -->
+  <section id="hoy">
+    <h1 class="titulo">Hoy y Siempre</h1>
+
+    <div class="bloque">
+      <div class="imagen">
+        <img src="radioembarazo.jpeg" alt="Embarazo actual">
+      </div>
+
+      <div class="texto">
+        <h2>Una nueva vida</h2>
+        <p>
+          A inicios de marzo de 2026,
+          mi mamá quedó embarazada nuevamente.
+          <br><br>
+          Y aunque han pasado muchos años
+          desde que comenzó esta historia,
+          ella sigue siendo la misma persona fuerte,
+          luchadora y amorosa de siempre.
+          <br><br>
+          Nunca dejó de ser una madre increíble.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="frase">
+    <h2>Gracias Mamá ❤️</h2>
+    <p>
+      Gracias por cada sacrificio,
+      cada abrazo,
+      cada noche sin dormir,
+      cada consejo,
+      cada esfuerzo
+      y cada momento en el que nos pusiste primero.
+      <br><br>
+      Todo lo que soy hoy
+      es gracias a ti.
+      <br><br>
+      Feliz Día de la Madre.
+      Te amo infinitamente.
+    </p>
+  </section>
+
+  <footer>
+    <h2>Con amor, Martin Ignacio Nova Castro ❤️</h2>
+    <p>
+      10 de Mayo de 2026
+      <br>
+      Para la mejor mamá del mundo.
+    </p>
+  </footer>
+
+</body>
+</html>
